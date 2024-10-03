@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<!-- Sensor Configuration Popup -->
+<div id="sensorConfigPopup" style="display: none;">
+    <h2>Configure Sensor</h2>
+    <label for="sensorName">Name:</label>
+    <input type="text" id="sensorName" /><br>
+
+    <label for="detectionRange">Detection Range (m):</label>
+    <input type="number" id="detectionRange" /><br>
+
+    <label for="detectionAngle">Detection Angle (degrees):</label>
+    <input type="number" id="detectionAngle" /><br>
+
+    <button id="toggleSensorButton">Toggle Sensor</button>
+    <button id="saveSensorButton">Save</button>
+    <button id="exitConfigButton">Exit</button>
+</div>
+
+<h1>Sensor Simulator</h1>
+<div id="canvasContainer">
+    <canvas id="simulationCanvas" width="800" height="600"></canvas>
+</div>
+<button id="addSensorButton">Add Sensor</button>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

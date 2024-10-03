@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Sensor Simulator</h1>
+    <div id="canvasContainer">
+        <canvas id="simulationCanvas" width="800" height="600"></canvas>
+    </div>
+    <button id="addSensorButton">Add Sensor</button>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
